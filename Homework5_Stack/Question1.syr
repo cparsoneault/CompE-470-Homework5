@@ -1,0 +1,422 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Question1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Question1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Question1"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : Question1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" into library work
+Parsing module <Question1>.
+Parsing module <tb_question1>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Question1>.
+WARNING:HDLCompiler:91 - "C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 32: Signal <push> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 33: Signal <empty> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 34: Signal <sp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 34: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 37: Signal <full> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 38: Signal <sp> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 38: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Question1>.
+    Related source file is "C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v".
+        N = 8
+        WL = 10
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit adder for signal <n0162> created at line 38.
+WARNING:Xst:737 - Found 1-bit latch for signal <dout<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <error>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sp<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sp<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <sp<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 Latch(s).
+	inferred   6 Multiplexer(s).
+Unit <Question1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Latches                                              : 5
+ 1-bit latch                                           : 5
+# Multiplexers                                         : 6
+ 1-bit 2-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <dout_8> (without init value) has a constant value of 0 in block <Question1>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Multiplexers                                         : 6
+ 1-bit 2-to-1 multiplexer                              : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <dout_8> (without init value) has a constant value of 0 in block <Question1>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Question1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Question1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Question1.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 7
+#      GND                         : 1
+#      LUT3                        : 3
+#      LUT4                        : 1
+#      LUT5                        : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 4
+#      LD                          : 4
+# IO Buffers                       : 19
+#      IBUF                        : 3
+#      OBUF                        : 16
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               3  out of   4800     0%  
+ Number of Slice LUTs:                    5  out of   2400     0%  
+    Number used as Logic:                 5  out of   2400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      8
+   Number with an unused Flip Flop:       5  out of      8    62%  
+   Number with an unused LUT:             3  out of      8    37%  
+   Number of fully used LUT-FF pairs:     0  out of      8     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          30
+ Number of bonded IOBs:                  19  out of    102    18%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------+------------------------+-------+
+Clock Signal                                           | Clock buffer(FF name)  | Load  |
+-------------------------------------------------------+------------------------+-------+
+push_rst_Mux_35_o(Mmux_push_rst_Mux_35_o11:O)          | NONE(*)(sp_1)          | 3     |
+push_PWR_14_o_Mux_34_o(Mmux_push_PWR_14_o_Mux_34_o11:O)| NONE(*)(error)         | 1     |
+-------------------------------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.585ns (Maximum Frequency: 630.815MHz)
+   Minimum input arrival time before clock: 2.551ns
+   Maximum output required time after clock: 3.752ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'push_rst_Mux_35_o'
+  Clock period: 1.585ns (frequency: 630.815MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               1.585ns (Levels of Logic = 1)
+  Source:            sp_2 (LATCH)
+  Destination:       sp_2 (LATCH)
+  Source Clock:      push_rst_Mux_35_o falling
+  Destination Clock: push_rst_Mux_35_o falling
+
+  Data Path: sp_2 to sp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               2   0.498   0.845  sp_2 (sp_2)
+     LUT5:I2->O            1   0.205   0.000  Mmux_push_sp[2]_wide_mux_22_OUT<2>11 (push_sp[2]_wide_mux_22_OUT<2>)
+     LD:D                      0.037          sp_2
+    ----------------------------------------
+    Total                      1.585ns (0.740ns logic, 0.845ns route)
+                                       (46.7% logic, 53.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'push_rst_Mux_35_o'
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Offset:              2.551ns (Levels of Logic = 2)
+  Source:            pop (PAD)
+  Destination:       sp_2 (LATCH)
+  Destination Clock: push_rst_Mux_35_o falling
+
+  Data Path: pop to sp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   1.089  pop_IBUF (pop_IBUF)
+     LUT5:I0->O            1   0.203   0.000  Mmux_push_sp[2]_wide_mux_22_OUT<2>11 (push_sp[2]_wide_mux_22_OUT<2>)
+     LD:D                      0.037          sp_2
+    ----------------------------------------
+    Total                      2.551ns (1.462ns logic, 1.089ns route)
+                                       (57.3% logic, 42.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'push_PWR_14_o_Mux_34_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.003ns (Levels of Logic = 1)
+  Source:            pop (PAD)
+  Destination:       error (LATCH)
+  Destination Clock: push_PWR_14_o_Mux_34_o falling
+
+  Data Path: pop to error
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.222   0.744  pop_IBUF (pop_IBUF)
+     LD:D                      0.037          error
+    ----------------------------------------
+    Total                      2.003ns (1.259ns logic, 0.744ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'push_rst_Mux_35_o'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.752ns (Levels of Logic = 1)
+  Source:            sp_0 (LATCH)
+  Destination:       sp<0> (PAD)
+  Source Clock:      push_rst_Mux_35_o falling
+
+  Data Path: sp_0 to sp<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.498   0.683  sp_0 (sp_0)
+     OBUF:I->O                 2.571          sp_0_OBUF (sp<0>)
+    ----------------------------------------
+    Total                      3.752ns (3.069ns logic, 0.683ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'push_PWR_14_o_Mux_34_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.648ns (Levels of Logic = 1)
+  Source:            error (LATCH)
+  Destination:       error (PAD)
+  Source Clock:      push_PWR_14_o_Mux_34_o falling
+
+  Data Path: error to error
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.498   0.579  error (error_OBUF)
+     OBUF:I->O                 2.571          error_OBUF (error)
+    ----------------------------------------
+    Total                      3.648ns (3.069ns logic, 0.579ns route)
+                                       (84.1% logic, 15.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock push_rst_Mux_35_o
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+push_rst_Mux_35_o|         |         |    1.585|         |
+-----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.61 secs
+ 
+--> 
+
+Total memory usage is 256592 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

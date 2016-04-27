@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="872" delta="new" >"C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 84: Using initial value of <arg fmt="%s" index="1">rst</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 41: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 50: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v" Line 79: Assignment to <arg fmt="%s" index="1">full</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="Xst" num="2972" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v</arg>&quot; line <arg fmt="%d" index="2">78</arg>. All outputs of instance &lt;<arg fmt="%s" index="3">test1</arg>&gt; of block &lt;<arg fmt="%s" index="4">Question1</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="5">tb_question1</arg>&gt;. Underlying logic will be removed.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v</arg>&quot; line <arg fmt="%s" index="2">78</arg>: Output port &lt;<arg fmt="%s" index="3">sp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">test1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v</arg>&quot; line <arg fmt="%s" index="2">78</arg>: Output port &lt;<arg fmt="%s" index="3">dout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">test1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v</arg>&quot; line <arg fmt="%s" index="2">78</arg>: Output port &lt;<arg fmt="%s" index="3">full</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">test1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v</arg>&quot; line <arg fmt="%s" index="2">78</arg>: Output port &lt;<arg fmt="%s" index="3">empty</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">test1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Chris\Documents\CompE470\Homework5\Homework5_Stack\Question1.v</arg>&quot; line <arg fmt="%s" index="2">78</arg>: Output port &lt;<arg fmt="%s" index="3">error</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">test1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+</messages>
+
